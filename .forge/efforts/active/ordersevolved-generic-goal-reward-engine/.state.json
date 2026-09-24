@@ -1,0 +1,147 @@
+{
+  "childIds": [],
+  "closureReason": null,
+  "confluencePageId": null,
+  "confluenceSpaceKey": null,
+  "coordinationRef": null,
+  "currentPhase": "discovery",
+  "deployables": [],
+  "domain": "software",
+  "graduation": {
+    "graduated": false,
+    "graduatedAt": null,
+    "graduatedTo": []
+  },
+  "id": "ordersevolved-generic-goal-reward-engine",
+  "jiraKey": null,
+  "jiraUrl": null,
+  "openDecisions": [],
+  "owner": "Bill Keenan",
+  "parentId": null,
+  "phaseBeforeClosure": null,
+  "phaseOrder": [
+    "discovery",
+    "planning",
+    "active",
+    "graduation",
+    "closed"
+  ],
+  "phases": {
+    "active": {
+      "approvedAt": null,
+      "approvedBy": null,
+      "gates": [
+        {
+          "approvalKey": "phases.active.approvedAt",
+          "label": "Child efforts created (at least one per assigned component)",
+          "status": "not_satisfied",
+          "type": "approved"
+        }
+      ],
+      "label": "Active",
+      "status": "not_started"
+    },
+    "closed": {
+      "approvedAt": null,
+      "approvedBy": null,
+      "gates": [
+        {
+          "approvalKey": "phases.closed.approvedAt",
+          "label": "All child efforts in childIds are closed",
+          "status": "not_satisfied",
+          "type": "children_closed"
+        }
+      ],
+      "label": "Closed",
+      "status": "not_started"
+    },
+    "discovery": {
+      "approvedAt": null,
+      "approvedBy": null,
+      "gates": [
+        {
+          "artifact": "requirements/business.md",
+          "label": "Business requirements present",
+          "status": "not_satisfied",
+          "type": "present"
+        },
+        {
+          "artifact": "requirements/functional.md",
+          "label": "Functional requirements present",
+          "status": "not_satisfied",
+          "type": "present"
+        },
+        {
+          "artifact": "spec/architecture/context.md",
+          "label": "C1 architecture context document present",
+          "status": "not_satisfied",
+          "type": "present"
+        },
+        {
+          "artifact": "spec/architecture/containers.md",
+          "label": "C2 architecture containers document present",
+          "status": "not_satisfied",
+          "type": "present"
+        },
+        {
+          "artifact": "validation/report.md",
+          "label": "Validation report present (result must not be FAIL)",
+          "status": "not_satisfied",
+          "type": "present"
+        },
+        {
+          "approvalKey": "phases.discovery.approvedAt",
+          "label": "Discovery approved",
+          "status": "not_satisfied",
+          "type": "approved"
+        }
+      ],
+      "label": "Discovery",
+      "status": "not_started"
+    },
+    "graduation": {
+      "approvedAt": null,
+      "approvedBy": null,
+      "gates": [
+        {
+          "approvalKey": "graduation.graduatedAt",
+          "label": "Initiative graduated (forge:graduate completed)",
+          "status": "not_satisfied",
+          "type": "approved"
+        }
+      ],
+      "label": "Graduation",
+      "status": "not_started"
+    },
+    "planning": {
+      "approvedAt": null,
+      "approvedBy": null,
+      "gates": [
+        {
+          "artifact": "plan/tasks.md",
+          "label": "Epic plan present (component-scoped epics, not implementation tasks)",
+          "status": "not_satisfied",
+          "type": "present"
+        },
+        {
+          "approvalKey": "phases.planning.approvedAt",
+          "label": "Plan approved",
+          "status": "not_satisfied",
+          "type": "approved"
+        }
+      ],
+      "label": "Planning",
+      "status": "not_started"
+    }
+  },
+  "productionBound": true,
+  "risk": "R1",
+  "spawnedWorkItems": [],
+  "subtype": "initiative",
+  "teams": [],
+  "timebox": null,
+  "title": "ordersEvolved — Generic Goal/Reward Engine",
+  "type": "initiative",
+  "upstreamProposals": [],
+  "workflowId": "software-initiative"
+}
