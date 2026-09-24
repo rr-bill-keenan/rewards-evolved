@@ -134,6 +134,14 @@
       "status": "not_started"
     }
   },
+  "pauseState": {
+    "activePhase": "discovery",
+    "activeTask": null,
+    "contextSummary": "Running forge:elaborate for the ordersEvolved Generic Goal/Reward Engine initiative (software-initiative, R1). FR-1 through FR-7 written covering event-to-goal matching, reward issuance, idempotency, operator goal configuration, lifecycle management, campaign association, and a placeholder finance record requirement. OQ-1 through OQ-3 capture finance unknowns pending session with Daniell Kellogg. business.md is absent — forge:prd with Miko and Gregg Dessen is queued after the finance session.",
+    "lastCompletedStep": "forge:elaborate partial — FR-1 through FR-7 written, OQ-1 through OQ-3 recorded in requirements/open-questions.md, committed to branch feat/ordersevolved-generic-goal-reward-engine",
+    "nextAction": "Pre-meet with Daniell Kellogg to prepare finance discovery session. Then: (1) Run finance discovery session to resolve OQ-1, OQ-2, OQ-3 — update FR-7 and open-questions.md. (2) Bring in Miko and Gregg Dessen, run forge:prd to produce business.md and prd.md. (3) Resume forge:elaborate to complete cross-cutting FRs with full BR traceability.",
+    "pausedAt": "2026-09-24T18:14:20Z"
+  },
   "productionBound": true,
   "risk": "R1",
   "spawnedWorkItems": [],
